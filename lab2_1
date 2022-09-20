@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class lab2_1 {
+
+    public static void main(String[] args) {
+        double x1, y1,z1,x2, y2,z2, d;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the value of x  for the first point:");
+        x1 = sc.nextDouble();
+        System.out.println("Enter the value of y  for the first point:");
+        y1 = sc.nextDouble();
+        System.out.println("Enter the value of z  for the first point:");
+        z1=  sc.nextDouble();
+        System.out.println("Enter the value of x  for the second point:");
+        x2 = sc.nextDouble();
+        System.out.println("Enter the value of x  for the second point:");
+        y2 = sc.nextDouble();
+        System.out.println("Enter the value of y  for the second point:");
+        z2=  sc.nextDouble();
+        d = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)+ Math.pow((z2 - z1), 2 ));
+        System.out.println("The distance between the points is: " + d);
+    }
+}
